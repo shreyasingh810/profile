@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+@font-face {
+  font-family: gloss;
+  src: url(../font/gloom.ttf); }
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -116,3 +120,35 @@ h1.b {
 .details-img i {
   font-size: 50px;
   color: #444; }
+
+.about {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center; }
+
+.about p {
+  font-family: "Poppins", sans-serif; }
+
+.dog-img {
+  background-image: url(../img/dog1.jpg);
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.center {
+  width: 100%;
+  height: 60vh;
+  position: relative; }
+
+.dog-img h1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: gloss;
+  color: #fff;
+  font-size: 70px; }
