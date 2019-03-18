@@ -1,3 +1,5 @@
+.dogs
+    position: relative
 .dog-img
     background-image: url(../img/dog1.jpg)
     height: 60vh
@@ -5,17 +7,26 @@
     background-repeat: no-repeat
     background-size: cover
     background-attachment: fixed
+    filter: blur(2px)
 
-.center
-    width: 100%
-    height: 60vh
-    position: relative
-
-.dog-img h1
+.text
     position: absolute
-    top: 45%
+    top: 50%
     left: 50%
     transform: translate(-50%,-50%)
-    font-family: gloss
+
+.text h1
     color: #fff
-    font-size: 70px 
+    font-size: 70px
+    font-family: gloss
+
+.img-all
+    text-align: center
+
+.img-all .all-images img
+    width: calc(100vw*0.32)
+    padding: 0
+    margin: 0
+
+.img-all .all-images img:nth-child(1), .img-all .all-images img:nth-child(3), .img-all .all-images img:nth-child(5) 
+    transform: scale(.6)
