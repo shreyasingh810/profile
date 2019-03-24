@@ -1,33 +1,68 @@
+.nav-toggle
+    position: fixed
+    top: 10px
+    right: 10px
+    width: 48px
+    height: 48px
+    cursor: pointer
+
+.hamburger, .hamburger::before, .hamburger::after
+    content: ''
+    display: block
+    width: 22px
+    height: 3px
+    background: white
+    margin: 0 auto
+    transform: translateY(16px)
+    border-radius: 20px
+    transition: all 150ms ease-in
+
+.hamburger::before
+    transform: translateY(7px)
+
+.hamburger::after
+    transform: translateY(10.5px)
+
+.open .hamburger
+    transform: rotate(45deg) translate(15px,14px)
+
+.open .hamburger::before
+    opacity: 0
+
+.open .hamburger::after
+    transform: rotate(90deg) translate(-2px, 1px)
+
 .new-header
     position: fixed
-    top: 0
-    left: 0
     right: 0
-    z-index: 99
-.container
-    width: 90%
-    max-width: 1200px
-    margin: 0 auto
+    top: 0
+    z-index: 99 
 
 .header
-    position: relative
+    min-width: 00px
+    height: 100vh
+    background: #181a30
+    transform: translateX(100px)
+    transition: all 250ms ease-in-out
+    opacity: 0
 
-.nav
-    position: absolute
-    top: 0
-    right: 0
-    left: 0
-    text-align: right
-    background: linear-gradient(to right, #62bdfc 0%, #6a75e1 100%)
-
-.nav a
-    font-family: "Poppins", sans-serif
-    text-transform: uppercase
-    font-weight: 600
-    padding: 20px
-    text-decoration: none
-    color: #ffffff
-    font-size: 14px
+.header-open
+    transform: translateX(0)
+    min-width: 250px
+    opacity: 1
 
 .nav li
-    display: inline
+    list-style: none
+    padding: 10px 0 10px 30px
+    cursor: pointer
+
+.nav li:hover
+    background: black
+.nav ul
+    padding: 0
+.nav a
+    text-decoration: none
+    color: white
+    font-size: 15px
+    line-height: 2
+    font-family: "Poppins", sans-serif

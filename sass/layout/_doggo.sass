@@ -8,17 +8,26 @@
     background-size: cover
     background-attachment: fixed
     filter: blur(2px)
+    @supports (-webkit-overflow-scrolling: touch) 
+        background-attachment: scroll
 
 .text
     position: absolute
     top: 50%
     left: 50%
     transform: translate(-50%,-50%)
+    text-align: center
 
 .text h1
     color: #fff
     font-size: 70px
     font-family: gloss
+    @media (max-width: 600px)
+        font-size: 50px
+        line-height: 1.5
+    @media (max-width: 450px)
+        font-size: 40px
+        line-height: 1.5
 
 .img-all
     text-align: center
@@ -27,6 +36,8 @@
     width: calc(100vw*0.32)
     padding: 0
     margin: 0
+    @media (max-width: 630px)
+        width: calc(100vw*0.45)
 
 .img-all .all-images img:nth-child(1), .img-all .all-images img:nth-child(3), .img-all .all-images img:nth-child(5) 
     transform: scale(.6)

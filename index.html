@@ -7,23 +7,30 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
     <title>Shreya Singh</title>
 </head>
 <body>
     <section class="new-header">
-        <div class="header">
+        <div class="header" id="header">
             <div class="container">
                 <div class="logo"><img src="" alt=""></div>
                 <div class="nav">
                     <ul>
-                        <li><a href="">home</a></li>
-                        <li><a href="">home</a></li>
-                        <li><a href="">home</a></li>
-                        <li><a href="">home</a></li>
-                        <li><a href="">home</a></li>
+                        <li class="homec"><a href="" onclick="return false;">Home</a></li>
+                        <li class="aboutc"><a href="" onclick="return false;">About</a></li>
+                        <li class="doggoc"><a href="" onclick="return false;">Doggo</a></li>
+                        <li class="dancec"><a href="" onclick="return false;">Dance</a></li>
+                        <li class="resumec"><a href="" onclick="return false;">Resume</a></li>
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="nav-toggle" id="nav">
+            <div class="hamburger"></div>
         </div>
     </section>
 
@@ -40,12 +47,12 @@
 
         <div class="profile-links">
             <ul>
-                <li><a href=""><i class="fab fa-facebook-f"></i>    </a></li>
-                <li><a href=""><i class="fab fa-twitter"></i></a></li>    
-                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                <li><a href=""><i class="fab fa-github"></i></a></li>
-                <li><a href=""><i class="fab fa-quora"></i></a></li>
-                <li><a href=""><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://www.facebook.com/Shreya.081098" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/ShreyaS22581036" target="_blank"><i class="fab fa-twitter"></i></a></li>    
+                <li><a href="https://in.linkedin.com/in/shreya-singh-513353181"><i class="fab fa-linkedin" target="_blank"></i></a></li>
+                <li><a href="https://github.com/shreyasingh810" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.quora.com/profile/Shreya-Singh-112" target="_blank"><i class="fab fa-quora"></i></a></li>
+                <li><a href="mailto:singh.shreya081098@gmail.com"><i class="fas fa-envelope"></i></a></li>
             </ul>
         </div>
     </section>
@@ -86,13 +93,32 @@
         </div>
     </section>
 
-    <section class="dogs">
-        <div class="dog-img">
+    <section class="dogs dance">
+        <div class="dog-img dance-img">
         </div>
 
         <div class="text">
             <h1>I Love to Dance</h1>
         </div>
     </section>
+
+    <section class="img-all-dance">
+        <div class="all-images-dance">
+            <img src="./img/dance/2.jpg" alt="">
+            <img src="./img/dance/3.jpg" alt="">
+        </div>
+    </section> 
+
+    <section class="resume">
+        <div class="resume-container">
+            <div class="eye">
+                <a href="https://drive.google.com/open?id=11ZLnGM4slFmX5kGw3jUW_GMN6mO1r_dQ" target="_blank"><i class="fas fa-eye"></i></a>
+            </div>
+            <div class="about-resume">
+                <h1>check my resume...</h1>
+            </div>
+        </div>
+    </section>
+    <script src="./js/nav.js"></script>
 </body>
 </html>
